@@ -1,5 +1,5 @@
 .header {
-  background: #11131a;
+  background: #1f1f1f;
   position: fixed;
   width: 100%;
   top: 0;
@@ -12,7 +12,7 @@
 .header-bg-wrapper {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-image: url(../img/hero/hero-gradient-mob.png);
+  background-image: url(../img/hero/hero-lines-mob.png);
   background-repeat: no-repeat;
   background-position: top 0px left 0px;
   background-size: auto;
@@ -23,7 +23,7 @@
   @include media(desktop) {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url(../img/hero/hero-top-gradient.png);
+    background-image: url(../img/hero/hero-lines-desk.png);
     background-repeat: no-repeat;
     background-position: top 0px left 42px;
     background-size: auto;
@@ -32,6 +32,9 @@
 }
 
 .header-container {
+  @include media(desktop) {
+    padding: 0 160px;
+  }
 }
 
 .nav {
@@ -55,9 +58,10 @@
 
   @include media(desktop) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 22px 24px;
   }
 }
 
@@ -65,8 +69,8 @@
 }
 
 .nav-list-link {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   font-size: 20px;
   color: #fff;
   transition: all 0.3s ease-in-out;
