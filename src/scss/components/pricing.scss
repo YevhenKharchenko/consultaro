@@ -1,0 +1,132 @@
+.pricing-section {
+}
+
+.pricing-bg-wrapper {
+  padding-bottom: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-bottom: 120px;
+    max-width: 1440px;
+  }
+}
+
+.pricing-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    align-items: start;
+  }
+}
+
+.pricing-list-item {
+  border: 1px solid #5e92bf;
+  border-radius: 24px;
+  padding: 24px 32px;
+  width: 100%;
+
+  @include media(desktop) {
+    flex-direction: row;
+
+    &:nth-child(2) {
+      .pricing-text {
+        @include media(desktop) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+.pricing-item-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.pricing-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+}
+
+.pricing-item-list {
+  list-style-type: disc;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  padding-left: 32px;
+
+  @include media(desktop) {
+    margin-bottom: 28px;
+  }
+}
+
+.pricing-item-list-el {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.pricing-item-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: 40px;
+    max-width: 278px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.pricing-btn-wrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: max-content;
+  width: 100%;
+}
+
+.pricing-btn {
+  background: #002eb0;
+  border-radius: 32px;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media(desktop) {
+  }
+}

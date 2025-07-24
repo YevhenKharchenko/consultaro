@@ -1,0 +1,91 @@
+.header {
+  background: #11131a;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+  @include media(desktop) {
+  }
+}
+
+.header-bg-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: url(../img/hero/hero-gradient-mob.png);
+  background-repeat: no-repeat;
+  background-position: top 0px left 0px;
+  background-size: auto;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(../img/hero/hero-top-gradient.png);
+    background-repeat: no-repeat;
+    background-position: top 0px left 42px;
+    background-size: auto;
+    max-width: 1440px;
+  }
+}
+
+.header-container {
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  @include media(desktop) {
+    justify-content: center;
+  }
+}
+
+.header-logo-link {
+}
+
+.header-logo-icon {
+}
+
+.nav-list {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.nav-list-item {
+}
+
+.nav-list-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &.active {
+  }
+}
+
+.nav-list-link.active {
+}
+
+.nav-btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
