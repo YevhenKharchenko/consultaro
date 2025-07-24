@@ -6,9 +6,11 @@
 }
 
 .footer-content-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .footer-nav {
@@ -44,7 +46,6 @@
 
   @include media(desktop) {
     font-family: 'Lora', sans-serif;
-    font-weight: 400;
     letter-spacing: 0.04em;
   }
 
