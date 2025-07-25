@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://consultana.site/sitemap.xml
+Sitemap: https://consultaro.pro/sitemap.xml

@@ -1,7 +1,7 @@
-.clients-section {
+.consultants-section {
 }
 
-.clients-bg-wrapper {
+.consultants-bg-wrapper {
   padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
@@ -10,14 +10,14 @@
   @include media(desktop) {
     padding-bottom: 152px;
     max-width: 1440px;
-    background-image: url(../img/clients/clients-lines.png);
+    background-image: url(../img/consultants/consultants-lines.png);
     background-repeat: no-repeat;
-    background-position: top 0px left 0px;
+    background-position: top 0px right 0px;
     background-size: auto;
   }
 }
 
-.clients-list {
+.consultants-list {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -31,7 +31,7 @@
   }
 }
 
-.clients-list-item {
+.consultants-list-item {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -40,11 +40,11 @@
   }
 }
 
-.clients-icon {
+.consultants-icon {
   min-width: 40px;
 }
 
-.clients-item-text {
+.consultants-item-text {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -54,7 +54,7 @@
   }
 }
 
-.clients-text {
+.consultants-text {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 20px;

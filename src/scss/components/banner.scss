@@ -1,7 +1,7 @@
 .cookie-banner-section {
-  background: #1e1f25;
+  background: #2e2e2e;
   border-radius: 4px;
-  padding: 24px 16px;
+  padding: 24px;
   width: 100%;
   max-width: 375px;
   margin: 0 auto;
@@ -14,7 +14,6 @@
   display: none;
 
   @include media(desktop) {
-    padding: 24px;
     max-width: 1440px;
   }
 }
@@ -25,20 +24,19 @@
 }
 
 .cookie-banner-text-wrapper {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 
   @include media(desktop) {
-    margin-bottom: 32px;
   }
 }
 
 .cookie-banner-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 24px;
   color: #fff;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 
   @include media(desktop) {
     font-size: 32px;
@@ -47,8 +45,8 @@
 }
 
 .cookie-banner-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   font-size: 20px;
   color: #fff;
 
@@ -74,17 +72,15 @@
   align-items: center;
   justify-content: center;
   border-radius: 32px;
-  padding: 16px 24px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  padding: 20px 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   font-size: 20px;
   color: #fff;
   width: 100%;
-  max-width: 239px;
+  max-width: 242px;
 
   @include media(desktop) {
-    padding: 20px 40px;
-    max-width: 260px;
   }
 }
 
@@ -94,17 +90,15 @@
   justify-content: center;
   border: 2px solid #002eb0;
   border-radius: 32px;
-  padding: 12px 22px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  padding: 20px 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   font-size: 20px;
-  color: #002eb0;
+  color: #fff;
   width: 100%;
-  max-width: 239px;
+  max-width: 242px;
 
   @include media(desktop) {
-    padding: 18px 38px;
-    max-width: 271px;
   }
 }
 

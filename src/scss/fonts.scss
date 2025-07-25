@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Open Sans';
   src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: 400;

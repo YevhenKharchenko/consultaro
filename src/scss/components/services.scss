@@ -48,6 +48,7 @@
   }
 
   @include media(desktop) {
+    justify-content: start;
     max-width: 384px;
     min-height: 173px;
   }

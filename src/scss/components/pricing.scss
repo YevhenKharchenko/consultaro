@@ -8,7 +8,7 @@
   margin-right: auto;
 
   @include media(desktop) {
-    padding-bottom: 120px;
+    padding-bottom: 152px;
     max-width: 1440px;
   }
 }
@@ -17,116 +17,78 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 44px;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 32px;
 
   @include media(desktop) {
     flex-direction: row;
-    align-items: start;
   }
 }
 
 .pricing-list-item {
-  border: 1px solid #5e92bf;
-  border-radius: 24px;
-  padding: 24px 32px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   width: 100%;
 
-  @include media(desktop) {
-    flex-direction: row;
+  &:nth-child(1) {
+    border: 2px solid #223296;
+  }
 
-    &:nth-child(2) {
-      .pricing-text {
-        @include media(desktop) {
-          margin-bottom: 40px;
-        }
-      }
-    }
+  &:nth-child(2) {
+    border: 2px solid #581ca2;
+  }
+
+  &:nth-child(3) {
+    border: 2px solid #7900a5;
+  }
+
+  @include media(desktop) {
+    max-width: 384px;
   }
 }
 
 .pricing-item-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.pricing-item-time {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   font-size: 20px;
   text-align: center;
   color: #fff;
-  margin-bottom: 8px;
 
   @include media(desktop) {
-    font-size: 24px;
+  }
+}
+
+.pricing-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
   }
 }
 
 .pricing-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   font-size: 20px;
   text-align: center;
   color: #fff;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    font-size: 24px;
-    margin-bottom: 28px;
-  }
-}
-
-.pricing-item-list {
-  list-style-type: disc;
-  max-width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 16px;
-  padding-left: 32px;
-
-  @include media(desktop) {
-    margin-bottom: 28px;
-  }
-}
-
-.pricing-item-list-el {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #fff;
-}
-
-.pricing-item-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    margin-bottom: 40px;
-    max-width: 278px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.pricing-btn-wrapper {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: max-content;
-  width: 100%;
-}
-
-.pricing-btn {
-  background: #002eb0;
-  border-radius: 32px;
-  padding: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @include media(desktop) {
-  }
 }
